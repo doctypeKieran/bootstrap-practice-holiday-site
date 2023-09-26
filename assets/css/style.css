@@ -2,26 +2,99 @@
 
 /* Background image for home page */
 .bg-container {
-        background: #000 url("../images/pexels-quang-nguyen-vinh-2144922.jpg") no-repeat center center;
-        background-size: cover;
-        color: #fff;
-        height: 100vh;
-        width: 100%;
-        position: relative;
+    background: #000 url("../images/pexels-quang-nguyen-vinh-2144922.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
 
-/* Navbar Styles */
-
+/* Home Navbar Styles */
 nav.navbar.navbar-dark .navbar-nav a.nav-link,
 nav.navbar.navbar-dark .navbar-brand {
     color: #fff;
+    transition: all 0.3s linear;
+}
+
+nav.navbar.navbar-dark .navbar-nav a.nav-link:hover {
+    color: rgb(143, 143, 143);
 }
 
 nav.navbar.navbar-dark .navbar-brand {
-    font-weight: bold;TRT
+    font-weight: bold;
+    font-size: 40px;
 }
 
 nav.navbar.navbar-dark .navbar-nav a.nav-link.active-link {
     padding-bottom: 0;
-    border-bottom: 2px solid #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav.navbar.navbar-dark .navbar-nav a.nav-link.active-link:hover {
+    color: #fff;
+}
+
+/* Home page searchbar */
+.home-searchbar {
+    width: 800px;
+    align-self: center;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.home-searchbar::placeholder {
+    color: #b9b9b9;
+}
+
+/* Footer Styles */
+footer {
+    padding: 10px;
+}
+
+/* -------------------------- Holidays Page Styles */
+
+nav.navbar.navbar-light.secondary-nav .navbar-nav a.nav-link,
+nav.navbar.navbar-light.secondary-nav .navbar-brand {
+    color: #000;
+}
+
+nav.navbar.navbar-light.secondary-nav .navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav.navbar.navbar-light.secondary-nav {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------------- Media queries */
+@media screen and (max-width: 950px) {
+
+    /* Home search bar */
+    .home-searchbar {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Home search bar */
+    .home-searchbar {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 588px) {
+
+    /* Home search bar */
+    .home-searchbar {
+        width: 90%;
+    }
 }
