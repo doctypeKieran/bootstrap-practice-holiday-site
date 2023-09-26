@@ -74,6 +74,22 @@ nav.navbar.navbar-light.secondary-nav {
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
+/* Holiday cards */
+.holiday-card {
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+}
+.holiday-card:hover {
+    transform: scale(1.05);
+}
+.holiday-card .card-price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.holiday-card .btn.card-btn {
+    border: 1px solid #b6b6b6;
+}
 /* -------------------------- Media queries */
 @media screen and (max-width: 950px) {
 
