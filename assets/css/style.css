@@ -1,3 +1,27 @@
-h1 {
-    color: blue;
+/* Google Font imports */
+
+/* Background image for home page */
+.bg-container {
+        background: #000 url("../images/pexels-quang-nguyen-vinh-2144922.jpg") no-repeat center center;
+        background-size: cover;
+        color: #fff;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+}
+
+/* Navbar Styles */
+
+nav.navbar.navbar-dark .navbar-nav a.nav-link,
+nav.navbar.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+nav.navbar.navbar-dark .navbar-brand {
+    font-weight: bold;TRT
+}
+
+nav.navbar.navbar-dark .navbar-nav a.nav-link.active-link {
+    padding-bottom: 0;
+    border-bottom: 2px solid #fff;
 }
